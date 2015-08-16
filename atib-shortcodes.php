@@ -88,3 +88,31 @@ function atib_list_monthly_archive() {
 }
 
 add_shortcode( 'atiblistmonthlyarchive', 'atib_list_monthly_archive' );
+
+
+/*
+Style enclosed text as ingress with larger font.
+Todo: move css from theme-child to own css in plugin.
+
+Shortcode [atibingress]text[/atibingress]
+*/
+function atib_ingress( $atts, $content = null ) {
+	$out = '<p class="ingress">' . $content . '</p>';
+	return $out;
+}
+
+add_shortcode( 'atibingress', 'atib_ingress' );
+
+/*
+Style enclosed text as pull quote with larger font and increased margin.
+Todo: move css from theme-child to own css in plugin.
+
+Shortcode [atibpullquote]text[/atibpullquote]
+*/
+function atib_pullquote( $atts, $content = null ) {
+	$out = '<aside><blockquote class="pullquote">' . $content . '</blockquote></aside>';
+	return $out;
+}
+
+add_shortcode( 'atibpullquote', 'atib_pullquote' );
+
