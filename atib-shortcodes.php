@@ -104,7 +104,9 @@ function atib_ingress( $atts, $content = null ) {
 add_shortcode( 'atibingress', 'atib_ingress' );
 
 /*
-Style enclosed text as pull quote with larger font and increased margin.
+Style enclosed text as pullquote with larger font and increased margin.
+Use to re-quote content from surrounding article to highlight content 
+and/or add visual effect.
 Todo: move css from theme-child to own css in plugin.
 
 Shortcode [atibpullquote]text[/atibpullquote]
