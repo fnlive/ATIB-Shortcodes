@@ -26,6 +26,13 @@ along with {Plugin Name}. If not, see https://www.gnu.org/licenses/gpl-2.0.html.
 */
 
 
+/*
+Output a "Category archive" listing in a table style 
+includeing category, description of category, and no of 
+posts in category. 
+
+Shortcode [atiblistcategories]
+*/
 function atib_list_categories() {
 	$args = array( 
 	'orderby'    => 'id',
@@ -46,6 +53,11 @@ function atib_list_categories() {
 add_shortcode( 'atiblistcategories', 'atib_list_categories' );
 
 
+/*
+Output a "Category archive" listing.
+
+Shortcode [atiblistcategoriessimple]
+*/
 function atib_list_categories_simple() {
 	$list = wp_list_categories( "echo=0&orderby=name&show_count=1&hide_empty=0&title_li=" );
 	return $list;
@@ -53,6 +65,11 @@ function atib_list_categories_simple() {
 
 add_shortcode( 'atiblistcategoriessimple', 'atib_list_categories_simple' );
 
+/*
+Output a "Tag cloud".
+
+Shortcode [atiblisttagssimple]
+*/
 function atib_list_tags_simple() {
 	$list = wp_tag_cloud( 'echo=0&number=0&format=flat&order=ASC&orderby=name' );
 	return $list;
@@ -60,6 +77,11 @@ function atib_list_tags_simple() {
 
 add_shortcode( 'atiblisttagssimple', 'atib_list_tags_simple' );
 
+/*
+Output a "Monthly archive" listing.
+
+Shortcode [atiblistmonthlyarchive]
+*/
 function atib_list_monthly_archive() {
 	$list = wp_get_archives( 'echo=0&type=monthly&format=html' );
 	return $list;
