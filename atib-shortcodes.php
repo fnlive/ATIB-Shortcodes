@@ -110,7 +110,7 @@ Todo: move css from theme-child to own css in plugin.
 Shortcode [atibpullquote]text[/atibpullquote]
 */
 function atib_pullquote( $atts, $content = null ) {
-	$out = '<aside><blockquote class="pullquote">' . $content . '</blockquote></aside>';
+	$out = '<aside class="pullquote">' . $content . '</aside>';
 	return $out;
 }
 
