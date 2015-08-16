@@ -1,13 +1,29 @@
 <?php
-/**
- * Plugin Name: ATIB Shortcodes
- * Plugin URI: https://github.com/fnlive/ATIB-Shortcodes
- * Description: Shortcodes for "Annika och Torkel i Berg" webbplats.
- * Version: 0.0.1
- * Author: Fredrik Nilsson
- * Author URI: https://github.com/fnlive
- * License: GPL2
- */
+/*
+Plugin Name: ATIB Shortcodes
+Plugin URI: https://github.com/fnlive/atib-shortcodes
+Description: Shortcodes for "Annika och Torkel i Berg" webbplats.
+Version: 0.0.1
+Author: Fredrik Nilsson
+Author URI: https://github.com/fnlive
+License: GPL2
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Domain Path: /languages
+Text Domain: atib-shortcodes
+
+ATIB Shortcodes is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 2 of the License, or
+any later version.
+ 
+ATIB Shortcodes is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
+ 
+You should have received a copy of the GNU General Public License
+along with {Plugin Name}. If not, see https://www.gnu.org/licenses/gpl-2.0.html.
+*/
 
 
 function atib_list_categories() {
